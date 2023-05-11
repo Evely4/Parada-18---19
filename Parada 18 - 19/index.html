@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>Atividade Javascript</title>
+    <nav>
+        <div class="logo">GoldCoast</div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li>
+            <a href="#">Features</a>
+            <ul>
+                <li><a href="#">pages</a></li>
+                <li><a href="#">Elements</a></li>
+                <li><a href="#">Icons</a></li>
+            </ul>
+          </li>  
+          <li>
+            <a href="#">Services</a>
+            <ul>
+                <li><a href="#"> web design</a></li>
+                <li><a href="#">app design</a></li>
+                <li>
+                    <a href="#">More</a>
+                    <span class="fa fa-plus"></span>
+                 <ul>
+                    <li><a href="#">Submenu-1</a></li>
+                    <li><a href="#">Submenu-2</a></li>
+                    <li><a href="#">Submenu-3</a></li>
+                 </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#">Portifólio</a></li>
+        <li><a href="#">Contact</a></li>
+            </ul>  
+        </nav> 
+</head>
+<body id="meufundo">  
+
+    <h1>INSIRA A COR DE FUNDO QUE VOCÊ DESEJA</h1>
+
+    <form action=""> 
+        <input type="text" id="bgcolor">
+        <input type="button" value="TROCAR" onclick="trocarcor()"> 
+    </form>
+    <p id="cor_escolhida"></p>
+
+    <script>
+        function trocarcor() {
+            let Cor =  document.querySelector('#bgcolor').value;
+            document.getElementById('meufundo').style.backgroundColor = Cor;
+            document.getElementById('cor_escolhida').innerHTML = `A cor escolhida foi ${Cor}`;
+        }
+    </script>
+
+<footer>Desenvolvido por Maria Evely - 2023</footer>
+</body>
+</html>
+   
